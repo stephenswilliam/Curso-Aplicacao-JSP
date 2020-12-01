@@ -8,22 +8,22 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Cadastro JSP</title>
+<title>Curso JSP</title>
 </head>
 <body>
-<!-- Exemplos de utilizaï¿½ï¿½o da biblioteca JSTL, declarada no inï¿½cio da pï¿½gina -->
-	<!--out Exibe na pï¿½gina -->
+<!-- Exemplos de utilização da biblioteca JSTL, declarada no início da página -->
+	<!--out Exibe na página -->
 	<c:out value="${'Bem vindo ao JSTL'}"></c:out><br>
 	
 	<!--import importa o conteudo de um site 
 	<c:import var="dadosurl" url="https://www.google.com.br"></c:import>
 	<c:out value="${dadosurl}"></c:out>   -->
 	
-	<!-- set declara uma variï¿½vel valida durante a pï¿½gina, sessï¿½o... -->
+	<!-- set declara uma variável valida durante a página, sessão... -->
 	<c:set var="calc" value="${500*3}" scope="page"></c:set>
 	<c:out value="${calc}"></c:out>
 	
-	<!-- remove remove uma variï¿½vel declarada anteriormente -->
+	<!-- remove remove uma variável declarada anteriormente -->
 	<c:remove var="calc"/>
 	<c:out value="${calc}"></c:out>
 	
@@ -75,13 +75,13 @@
 	<!-- redirect - redireciona para uma url -->
 	<c:set var="flag" value="1"/>
 	<br>
-	<c:out value="valor de flag ï¿½: ${flag * 2}"/>
+	<c:out value="valor de flag é: ${flag * 2}"/>
 	
 	
 	
 	<form action="ServletLogin" method="post">
 		<br>
-		Usuï¿½rio: <input type="text" id="login" name="login" placeholder="usuï¿½rio" ><br><br>
+		Usuário: <input type="text" id="login" name="login" placeholder="usuário" ><br><br>
 		Senha: <input type="text" id="senha" name="senha" placeholder="senha"><br><br>
 		<input type="submit" value="Validar">    
 	</form>
